@@ -49,7 +49,7 @@ img.prev{margin-top:12px;width:100%;max-width:540px;border:1px solid var(--rule)
 <div class="tag"><i></i>FULL MAP · EVERY TRACED HOP<span>BITGET DRAIN · 24 SEP 2026</span></div>
 <h1>Bitget drain: the full map of where the funds went</h1>
 <p class="lede">This is the complete trace behind my updates on the Bitget drain of 24 Sep 2026: every wallet and every transaction I followed, on one zoomable page. At 10:26 UTC on 30 Sep 2026, 3,801.33 BTC traced from the drain sits unspent in 927 Bitcoin addresses.</p>
-<div class="cta"><a class="btn" href="map.html">Open the full map →</a><a class="btn o" href="https://gist.github.com/Philgr8/189b20f67c8bb34f7c783055ac1cefa7">Update, hashes and CSVs (gist)</a></div>
+<div class="cta"><a class="btn" href="map.html">Open the full map →</a><a class="btn o" href="https://gist.github.com/Philgr8/189b20f67c8bb34f7c783055ac1cefa7">Update and hashes (gist)</a><a class="btn o" href="btc_held_2026-09-30.csv" download>Per-address CSV</a></div>
 
 <h2><b>01</b> what the map shows</h2>
 <p>Each box is an address; each arrow is one or more signed on-chain transactions, with amount and UTC time. The trace starts at the drained Bitget wallets and follows the funds across 18 chains, through THORChain, Chainflip, CoW, deBridge, Stargate, Across and the exchanges they touched, to where they sit now.</p>
@@ -78,10 +78,11 @@ img.prev{margin-top:12px;width:100%;max-width:540px;border:1px solid var(--rule)
 <tr><td>open to an issuer freeze · USDC on Noble, <code>noble1k9hfljezevcktymd280hmqnvuv63ahjlpdp7a6</code></td><td>26,737.72 USDC</td></tr>
 <tr><td>open to an issuer freeze · USDT on Ethereum, 2 wallets, read 11:08 UTC</td><td>58,854.15 USDT</td></tr>
 </table>
+<p style="margin-top:14px">Every Bitcoin address on Bitget's list, one row each, with its balance, traced or list-only status, confidence and hop chain with transaction hashes: <a href="btc_held_2026-09-30.csv" download>btc_held_2026-09-30.csv</a> (1.2 MB).</p>
 <img class="prev" src="image_2026-09-30.png" alt="Summary sheet: 3,801.33 BTC traced from the Bitget drain sits unspent in 927 Bitcoin addresses">
 
 <h2><b>04</b> sources and limits</h2>
-<p>Everything here is read from public blockchains and from the protocols' own public indexers; each claim, hash and time is in the gist update (file 10) and the per-address table (file 11). The map shows what I traced, not everything that exists: an address with no path from the drain is not on it unless it is on Bitget's list.</p>
+<p>Everything here is read from public blockchains and from the protocols' own public indexers; each claim, hash and time is in the gist update (file 10) and in the per-address CSV above. The map shows what I traced, not everything that exists: an address with no path from the drain is not on it unless it is on Bitget's list.</p>
 <p>If you run an exchange, a bridge or an issuer and one of these addresses reaches you, please contact Bitget and SEAL 911.</p>
 
 <div class="foot">Phil Grushyn · on-chain data 24–30 Sep 2026 · snapshot 30 Sep 2026 10:26:42 UTC</div>
