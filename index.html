@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bitget drain, 24 Sep 2026: full map of every traced hop</title>
+<meta name="description" content="Full on-chain map of the Bitget drain of 24 Sep 2026: every traced hop, 927 Bitcoin addresses holding 3,801.33 BTC at 10:26 UTC on 30 Sep 2026.">
+<meta property="og:title" content="Bitget drain, 24 Sep 2026: full map of every traced hop">
+<meta property="og:description" content="3,801.33 BTC traced from the drain sits unspent in 927 Bitcoin addresses (10:26 UTC, 30 Sep 2026). Every hop, searchable.">
+<meta property="og:image" content="https://philgr8.github.io/bitget-drain-map/image_2026-09-30.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@600;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0a0a0a;--ink:#d0d0d0;--hi:#f5f5f5;--mut:#8c8c8c;--rule:#3d3d3d;--row:#2a2a2a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:40px 16px 64px}
+.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--mut)}
+.top a{color:var(--ink)}
+.tag{margin-top:36px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:.16em;color:var(--hi)}
+.tag i{width:10px;height:18px;background:var(--hi);display:block}
+.tag span{color:var(--mut);letter-spacing:.1em}
+h1{margin:18px 0 0;font-family:'Martian Mono',monospace;font-weight:800;font-size:clamp(26px,4.4vw,38px);line-height:1.16;letter-spacing:-.02em;color:var(--hi)}
+.lede{margin-top:14px;font-size:19px}
+.cta{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 22px;border:1px solid var(--hi);color:var(--bg);background:var(--hi);font-family:'IBM Plex Mono',monospace;font-weight:600;text-decoration:none}
+.btn.o{background:transparent;color:var(--hi);border-color:var(--rule)}
+.btn:hover{opacity:.85}
+h2{margin:44px 0 10px;display:flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:14px;letter-spacing:.08em;color:var(--mut)}
+h2 b{color:var(--hi);font-weight:400}
+h2::after{content:"";flex-grow:1;border-top:1px dashed var(--rule)}
+p{margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:15px}
+td{padding:8px 0;border-bottom:1px solid var(--row);vertical-align:top}
+td:last-child{text-align:right;color:var(--hi);white-space:nowrap;padding-left:16px}
+td:first-child{color:var(--mut)}
+ul{margin:0;padding-left:20px}
+li{margin-bottom:6px}
+code{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--hi);word-break:break-all}
+a{color:var(--hi)}
+img.prev{margin-top:12px;width:100%;max-width:540px;border:1px solid var(--rule);display:block}
+.foot{margin-top:48px;padding-top:16px;border-top:1px solid var(--row);font-size:14px;color:var(--mut)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="top"><div><a href="https://www.linkedin.com/in/philgr">linkedin.com/in/philgr</a> · ~/cases/bitget-2026-09</div><div>times UTC</div></div>
+<div class="tag"><i></i>FULL MAP · EVERY TRACED HOP<span>BITGET DRAIN · 24 SEP 2026</span></div>
+<h1>Bitget drain: the full map of where the funds went</h1>
+<p class="lede">This is the complete trace behind my updates on the Bitget drain of 24 Sep 2026: every wallet and every transaction I followed, on one zoomable page. At 10:26 UTC on 30 Sep 2026, 3,801.33 BTC traced from the drain sits unspent in 927 Bitcoin addresses.</p>
+<div class="cta"><a class="btn" href="map.html">Open the full map →</a><a class="btn o" href="https://gist.github.com/Philgr8/189b20f67c8bb34f7c783055ac1cefa7">Update, hashes and CSVs (gist)</a></div>
+
+<h2><b>01</b> what the map shows</h2>
+<p>Each box is an address; each arrow is one or more signed on-chain transactions, with amount and UTC time. The trace starts at the drained Bitget wallets and follows the funds across 18 chains, through THORChain, Chainflip, CoW, deBridge, Stargate, Across and the exchanges they touched, to where they sit now.</p>
+<ul>
+<li>Balances were read from 10:26:42 to 10:35:30 UTC on 30 Sep 2026; the issuer freeze sweep started at 10:26:34 UTC.</li>
+<li>Every Bitcoin address on Bitget's own attacker list that holds a balance is on the map, tagged traced (a path from the drain) or list-only (on Bitget's list, no path found yet).</li>
+<li>Link confidence: a solid line is High (every hop is a signed transaction), a dashed line is Medium (one link is a CoW order matched to its Chainflip settlement by time and amount, or a Bitcoin hop under 0.01 BTC).</li>
+</ul>
+
+<h2><b>02</b> how to use it</h2>
+<ul>
+<li>Drag to pan, scroll or use + / − to zoom, <b>fit</b> to see everything.</li>
+<li>Type the start of an address or a transaction hash in the search box to jump to it.</li>
+<li>Click a box to see its address in full and its balance at the snapshot.</li>
+<li>The file is large (2.6 MB, about 3,700 addresses): give it a few seconds on a phone. A desktop browser works best.</li>
+</ul>
+
+<h2><b>03</b> held at 10:26 UTC, 30 Sep 2026</h2>
+<table>
+<tr><td>BTC traced from the drain · 927 addresses (High 2,565.38 · Medium 1,235.95)</td><td>3,801.33 BTC</td></tr>
+<tr><td>BTC on Bitget's list only · 69 addresses</td><td>264.63 BTC</td></tr>
+<tr><td>ETH · <code>0x4a777646417b0Fd34715d2b21d4a132c06AEd330</code>, of 1,169.67 ETH on Bitget's list</td><td>475.32 ETH</td></tr>
+<tr><td>ZEC · <code>t1WgMdtND8NF7NDUuYmq8MpMj1NTCXkMDVG</code></td><td>15,834.87 ZEC</td></tr>
+<tr><td>ALGO · <code>7EKUW3XG3W2LW37N4AALS54FFXIPPDRD5W47C7UD44S6Z2XNNFMXQA4UJ4</code></td><td>10.11M ALGO</td></tr>
+<tr><td>frozen by issuers since 25 Sep · 2 wallets</td><td>$339,103.41</td></tr>
+<tr><td>open to an issuer freeze · USDC on Noble, <code>noble1k9hfljezevcktymd280hmqnvuv63ahjlpdp7a6</code></td><td>26,737.72 USDC</td></tr>
+<tr><td>open to an issuer freeze · USDT on Ethereum, 2 wallets, read 11:08 UTC</td><td>58,854.15 USDT</td></tr>
+</table>
+<img class="prev" src="image_2026-09-30.png" alt="Summary sheet: 3,801.33 BTC traced from the Bitget drain sits unspent in 927 Bitcoin addresses">
+
+<h2><b>04</b> sources and limits</h2>
+<p>Everything here is read from public blockchains and from the protocols' own public indexers; each claim, hash and time is in the gist update (file 10) and the per-address table (file 11). The map shows what I traced, not everything that exists: an address with no path from the drain is not on it unless it is on Bitget's list.</p>
+<p>If you run an exchange, a bridge or an issuer and one of these addresses reaches you, please contact Bitget and SEAL 911.</p>
+
+<div class="foot">Phil Grushyn · on-chain data 24–30 Sep 2026 · snapshot 30 Sep 2026 10:26:42 UTC</div>
+</div>
+</body>
+</html>
